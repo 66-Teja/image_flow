@@ -1,0 +1,50 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel > .images {
+  height: 200px;
+  overflow: hidden;
+  transition: 300ms linear all;
+}
+
+.carousel >.images > .image {
+  width: 100%;
+  float: left;
+}
+
+.carousel > .images > img {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+.buttons {
+  position: absolute;
+  top: 45%;
+  bottom: 0;
+  width: 100%;
+}
+
+.buttons > a:first-child {
+  float: left;
+}
+.buttons > a:last-child {
+  float: right;
+}
